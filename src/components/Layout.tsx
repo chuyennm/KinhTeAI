@@ -95,7 +95,7 @@ export function Layout({ children }: { children: ReactNode }) {
       {menu && (
         <div className="fixed inset-0 z-30 lg:hidden">
           <div className="absolute inset-0 bg-black/60" onClick={() => setMenu(false)} />
-          <div className="absolute inset-y-0 left-0 w-64 shadow-2xl">{sidebar}</div>
+          <div className="safe-top safe-bottom absolute inset-y-0 left-0 w-64 bg-navy shadow-2xl">{sidebar}</div>
         </div>
       )}
 

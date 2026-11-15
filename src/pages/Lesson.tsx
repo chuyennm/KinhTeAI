@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { Markdown } from '../components/Markdown';
+import { NotationBox } from '../components/NotationBox';
 import { PythonRunner } from '../components/PythonRunner';
 import { Quiz } from '../components/Quiz';
 import { useTutor } from '../components/TutorContext';
@@ -114,6 +115,7 @@ export function LessonPage() {
                   <input value={predict} onChange={(e) => setPredict(e.target.value)} placeholder={tx('Dự đoán của tôi…', 'My guess…')} className="mt-2 w-full rounded-lg border border-line bg-bg px-3 py-2 text-sm" />
                 </Card>
               )}
+              <NotationBox lessonId={lesson.id} />
               <Markdown>{tr(lesson.core)}</Markdown>
             </div>
             <aside className="space-y-3 text-sm">
@@ -135,10 +137,16 @@ export function LessonPage() {
           </div>
         )}
 
-        {tab === 'examples' && <Markdown className="max-w-3xl">{tr(lesson.examples)}</Markdown>}
+        {tab === 'examples' && (
+          <div className="max-w-3xl">
+            <NotationBox lessonId={lesson.id} open={false} />
+            <Markdown>{tr(lesson.examples)}</Markdown>
+          </div>
+        )}
 
         {tab === 'lab' && (
           <div className="space-y-4">
+            <NotationBox lessonId={lesson.id} open={false} />
             <Card className="border-gold/40 bg-gold/5 p-4">
               <div className="mb-1 text-xs font-semibold uppercase tracking-widest text-gold">{tx('Nhiệm vụ', 'Mission')}</div>
               <p className="text-sm">{tr(lab.mission)}</p>

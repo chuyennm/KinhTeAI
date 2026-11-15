@@ -40,6 +40,13 @@ Hãy hình dung chợ đầu mối lúc 4 giờ sáng. Không ai ra lệnh giá 
 $$P = a - bQ \quad\text{(cầu)} \qquad P = c + dQ \quad\text{(cung)}$$
 $$Q^* = \frac{a-c}{b+d}, \qquad P^* = a - bQ^*$$
 
+Trong đó:
+- **a**: giá chặn của cầu, tức mức giá cao nhất mà vẫn còn người mua (lúc Q = 0). Ví dụ a = 100 nghĩa là giá 100 thì không ai mua nữa.
+- **b**: độ dốc đường cầu, tức giá phải giảm bao nhiêu để bán thêm 1 đơn vị. b lớn thì người mua ít nhạy với giá.
+- **c**: giá thấp nhất mà người bán bắt đầu chịu bán (lúc Q = 0), gần với chi phí tối thiểu.
+- **d**: độ dốc đường cung, tức giá phải tăng bao nhiêu thì người bán mới chịu bán thêm 1 đơn vị.
+- **Q\*** và **P\***: sản lượng và giá tại điểm hai đường cắt nhau. Công thức có được bằng cách cho hai vế giá bằng nhau: a − bQ = c + dQ.
+
 ## Hai lỗi người mới hay mắc
 1. **Nhầm "dịch chuyển đường" với "di chuyển dọc đường".** Giá thay đổi làm ta *trượt dọc* đường cầu. Thu nhập, thị hiếu, giá hàng thay thế mới làm *cả đường* dịch chuyển.
 2. **Tin rằng thuế đánh vào ai thì người đó chịu.** Gánh nặng thuế (tax incidence) rơi vào bên **kém co giãn hơn**, bất kể luật ghi ai nộp:
@@ -59,6 +66,13 @@ Picture a wholesale market at 4 a.m. Nobody decrees today's price of vegetables,
 ## Formulas (linear form)
 $$P = a - bQ \quad\text{(demand)} \qquad P = c + dQ \quad\text{(supply)}$$
 $$Q^* = \frac{a-c}{b+d}, \qquad P^* = a - bQ^*$$
+
+Where:
+- **a**: the demand choke price, the highest price at which anyone still buys (Q = 0). a = 100 means nobody buys at 100.
+- **b**: the slope of demand, how much the price must fall to sell one more unit. A large b means buyers are not very price-sensitive.
+- **c**: the lowest price at which sellers start supplying (Q = 0), close to their minimum cost.
+- **d**: the slope of supply, how much the price must rise for sellers to offer one more unit.
+- **Q\*** and **P\***: quantity and price where the curves cross, found by setting the two prices equal: a − bQ = c + dQ.
 
 ## Two classic beginner mistakes
 1. **Confusing a shift of the curve with a movement along it.** A price change slides you *along* the demand curve. Income, tastes and substitute prices move the *whole curve*.

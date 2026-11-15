@@ -172,7 +172,7 @@ export function TutorDrawer() {
 
   return (
     <aside
-      className="fixed inset-y-0 right-0 z-40 flex w-full max-w-[440px] flex-col border-l border-line bg-panel shadow-2xl"
+      className="safe-top safe-bottom fixed inset-y-0 right-0 z-40 flex w-full max-w-[440px] flex-col border-l border-line bg-panel shadow-2xl"
       aria-label="KinhTeAI Tutor"
     >
       <div className="flex items-center gap-2 border-b border-line bg-navy px-4 py-3 text-offwhite">

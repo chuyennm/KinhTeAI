@@ -30,6 +30,18 @@ body {
   @apply bg-bg text-ink font-sans antialiased;
   margin: 0;
 }
+/* iOS notch / Dynamic Island / home indicator: keep content inside the safe area
+   (index.html uses viewport-fit=cover, so the page would otherwise draw under them). */
+#root {
+  box-sizing: border-box;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
 * {
   scrollbar-width: thin;
   scrollbar-color: rgb(var(--line)) transparent;
